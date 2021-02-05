@@ -18,7 +18,7 @@ namespace Hahn.ApplicatonProcess.December2020.Domain
         /// <param name="age"><see cref="Applicant.Age"/></param>
         /// <param name="hired"><see cref="Applicant.Hired"/></param>
         public Applicant(string name, string familyName, string address, string countryOfOrigin, string emailAddress,
-            int age, bool hired)
+            int age, bool hired) : this()
         {
             Name = name;
             FamilyName = familyName;
@@ -28,6 +28,9 @@ namespace Hahn.ApplicatonProcess.December2020.Domain
             Age = age;
             Hired = hired;
         }
+
+        protected Applicant()
+        { }
 
         /// <summary>
         /// Candidate's Identification
